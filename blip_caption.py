@@ -13,7 +13,8 @@ from transformers import pipeline
 )
 @click.option("--large", is_flag=True, help="Use the large model")
 @click.option("json_", "--json", is_flag=True, help="Output as JSON")
-def cli(paths, large, json_):
+@click.option("gpu_", "--gpu", is_flag=False, help="Choose GPU")
+def cli(paths, large, json_, gpu_):
     captioner = pipeline(
         "image-to-text",
         model="Salesforce/blip-image-captioning-base"
