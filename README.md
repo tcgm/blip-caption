@@ -64,6 +64,15 @@ blip-caption /tmp/photos/*.* --json
 ```
 Any errors are returned as a `{"path": "...", "error": "error message"}` object.
 
+## GPU selection
+
+The `--gpu` flag changes the GPU which the model will use. Without it, the model will use the CPU.
+
+```
+blip-caption IMG_5825.jpeg --large --gpu 0
+```
+
+
 
 ## Development
 
