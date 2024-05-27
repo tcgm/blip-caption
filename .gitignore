@@ -1,2 +1,7 @@
 
 /.history
+/blip_caption.egg-info
+/venv
+/__pycache__
+/tests/__pycache__
+testimg.png
