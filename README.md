@@ -72,6 +72,8 @@ The `--gpu` flag changes the GPU which the model will use. Without it, the model
 blip-caption IMG_5825.jpeg --large --gpu 0
 ```
 
+This requires a Torch version that is GPU compatible. Torch has both CPU and GPU versions.
+
 
 
 ## Development
